@@ -1,0 +1,19 @@
+package ramda.stream;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class MainClass01 {
+	
+	public static void main(String[] args) {
+		
+		List<String> list =Arrays.asList("홍길동","이순신","홍길자","신사임당");
+		
+		
+		for(String s :list) {
+			System.out.println(s); //프로그램코드처리..
+		}
+		
+	}
+
+}

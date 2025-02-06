@@ -1,0 +1,43 @@
+package codingtest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solution {
+    public static String solution(int q, int r, String code) {
+    	List<String> list =new ArrayList<String>();
+		String[] str=code.split("");
+		String x="";
+		for(int i=0;i<str.length;i++) {
+			
+			x+=str[i];
+			if(x.length()==q) {
+				list.add(x);
+				x="";
+			}			
+			
+						
+		}
+		String ans="";
+		
+		for(int i=0;i<list.size();i++) {
+			ans+=list.get(i).charAt(r);
+		}
+		return ans;
+    }
+
+
+	 
+    
+	       
+	
+	public static void main(String[] args) {
+		
+		System.out.println(solution(3, 0, "qjnwezgrpirldywt"));
+	}
+    
+}
+
+	
+
+

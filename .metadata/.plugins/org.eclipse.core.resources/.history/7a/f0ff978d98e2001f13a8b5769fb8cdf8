@@ -1,0 +1,35 @@
+package multiclient;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class MainClient {
+	
+	public static void main(String[] args) {
+				
+		/*
+		 * 채팅
+		 * 클라이언트와 서버간의 대화(연결)
+		 * 서버(컴퓨터)는 클라이언트의 채팅글을 전달하고,
+		 * 여러 클라이언트를 서로 연결할 수 있게 합니다.
+		 * 
+		 */
+		
+		//클라이언트
+		//포트번호 - 프로그램식별번호
+		
+		try {
+			Socket clientSocket =new Socket("172.30.1.62",8181);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+			System.out.println("호스트주소 에러");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("스트림 에러");
+		}
+		
+		
+	}
+
+}
